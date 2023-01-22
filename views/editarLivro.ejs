@@ -1,0 +1,22 @@
+<%- include('partials/header') %>
+
+<main> 
+    <h2>Editar Livro </h2>
+    <form   class="add-form" action="/biblioteca/editar/salvar" method="POST">
+        
+        
+        <input class="tirar-id" type="text" name="id" id="id" value="<%= livro.id%>">
+
+        <label for="titulo">Titulo</label>
+        <input type="text" name="titulo" id="titulo" value="<%= livro.titulo%>">
+        
+        <label for="editora">Editora</label>
+        <input type="text" name="editora" id="editora" value="<%= livro.editora%>">
+        
+        <button type="submit"> Enviar </button>
+        
+    </form>
+    
+</main>
+
+<%- include('partials/footer') %>
